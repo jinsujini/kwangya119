@@ -1,0 +1,125 @@
+.top {
+    position: relative;
+    padding: 30px;
+    margin: 30px 0;
+    width:inherit;
+
+    .backImg {
+        position: absolute;
+        top: -50px;
+        z-index: 0;
+        width: 350px;
+        left: 10px;
+    }
+
+
+    .title,
+    .subtitle,
+    .mid1 {
+        position: relative;
+        z-index: 100;
+
+    }
+
+    .title {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        margin: 30px auto;
+        position: relative;
+        align-items: start;
+
+        img {
+            display: flex;
+            height: 30px;
+        }
+
+        .line1 {
+            display: flex;
+            width: 230px;
+
+            >img {
+                width: 80px;
+                margin-right: 4px;
+            }
+
+            .b {
+                position: relative;
+                display: flex;
+                min-width: 10px;
+                padding-bottom: 3px;
+                margin-right: 4px;
+                border-bottom: 3px solid black;
+
+                img {
+                    height: 30px;
+
+                }
+            }
+        }
+        .line2{
+            width: 140px;
+        }
+        .line3 {
+            display: flex;
+            align-items: center;
+            width: 300px;
+            justify-content: baseline;
+
+            >img {
+                width: fit-content;
+            }
+
+            .maxW {
+                max-width: 80px;
+                margin-right: 3px;
+            }
+
+            .box {
+                background-color: #fff;
+                padding: 0 20px;
+
+                min-width: 30px;
+                height: 30px;
+                border: solid 1.5px black;
+                border-radius: 5px;
+                margin-right: 3px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                span {
+                    font-family: 'jsMath-cmmi10';
+                }
+            }
+
+            .b {
+                position: relative;
+                display: inline-block;
+                min-width: 10px;
+                margin-right: 4px;
+                border-bottom: 3px solid black;
+                height: 35px;
+                max-width: fit-content;
+                padding-bottom: 3px;
+
+                >img {
+                    width: fit-content;
+                    height: 33px;
+                    object-fit: contain;
+
+
+                }
+            }
+        }
+
+
+    }
+
+    .subtitle {
+        width: 180px;
+        margin-bottom: 50px;
+    }
+
+
+}

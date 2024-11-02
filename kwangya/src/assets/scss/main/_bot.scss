@@ -1,0 +1,114 @@
+
+.bot {
+    height: 360px;
+    width: auto;
+    position: relative;
+    margin-bottom: 30px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Pretendard-Regular';
+    overflow: hidden;
+
+    
+   
+
+    .title {
+        position: relative;
+        margin: 30px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+            font-family: 'Pretendard-Regular';
+            font-size: 15px;
+            justify-content: center;
+            display: flex;
+            line-height: 30px;
+
+            span {
+                font-weight: 900;
+                margin-left: 3px;
+            }
+        }
+
+        h6 {
+            font-family: 'Noto Sans KR';
+            line-height: 30px;
+            font-size: 15px;
+            font-weight: 100;
+
+            span {
+                color: gray;
+            }
+        }
+    }
+
+    .rfm-marquee-container {
+        height: 60px;
+
+        overflow: visible;
+    }
+
+
+    .contents {
+        margin-right: 10px;
+        margin-bottom: 10px;
+        display: flex;
+
+        gap: 5px;
+
+        .profil {
+            width: 50px;
+            height: 50px;
+            background: #fff;
+            border-radius: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 1px solid #f1f1f1;
+
+            img {
+                width: 40px;
+                height: 40px;
+                border-radius: 20px;
+            }
+        }
+
+        .inner {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: auto;
+            height: 50px;
+            background: #fff;
+            border-radius: 25px;
+            padding: 10px 30px;
+            white-space: nowrap;
+            font-size: 15px;
+
+            span {
+                font-weight: 300;
+                font-family: 'Noto Sans KR';
+
+                strong {
+                    font-weight: bold;
+                }
+            }
+
+        }
+    }
+}
+
+.bot:before {
+    content: "";
+    position: absolute;
+
+    top: -150px;
+    left: -150px;
+    width: 600px;
+    height: 600px;
+    background: #ffeef3 url(../../img/main/main-back.png) no-repeat;
+
+}

@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+// setting
+@import "setting/resets";
+@import "setting/common";
+
+//section
+@import "section/header";
+@import "section/footer";
+@import "section/main";
+
+//main
+@import "main/top";
+@import "main/mid";
+@import "main/bot";
+
+//now
+@import "now/now.scss";
+
+//my
+@import "my/my.scss"

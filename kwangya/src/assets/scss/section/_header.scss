@@ -1,0 +1,102 @@
+.header {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        width: 100%;
+        z-index: 100;
+        margin: 0 auto;
+        position: relative;
+        .logo{
+            img{
+                height: 20px;
+            }
+        }
+        .navbtn{
+            img{
+                height: 30px;
+            }
+        }
+    }
+
+    display: flex;
+    position: relative;
+    flex-direction: column;
+
+    .nav {
+        height: auto;
+        width: 100%;
+
+        .nav-wrap {
+            padding: 1rem;   
+            width: 100%;
+            height: 100dvh;
+
+            .category {
+                margin: 0 1rem 1rem;
+                display: flex;
+                flex-direction: column;
+                border-bottom: 1px solid rgba(30, 31, 36, .1);
+
+                .btn1,
+                .btn2,
+                .btn3 {
+                    display: flex;
+                    padding-left: 1rem;
+                    display: flex;
+                    justify-content: space-between;
+
+                    span {
+                        font-size: 1rem;
+                        font-weight: 900;
+                        line-height: 3rem;
+                        text-align: left;
+                    }
+
+                    img {
+                        width: 0.8rem;  
+                    }
+                }
+                .sc1, .sc2, .sc3{
+                    padding-left: 2rem;
+                    display: flex;
+                    flex-direction: column;
+                    line-height: 2rem;
+                    font-weight: 400;
+
+                }
+                .sc3{
+                    margin-bottom: 20px;
+                }
+            }
+            .link-list{
+            
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                div{
+                    height: 40px;
+                    width: 90%;
+                    a{
+                        padding: 5px 20px;
+                        display: flex;
+                        justify-content: space-between;
+                        border-radius: 20px;
+                        border: 1px solid #f1f1f1;
+                        background-color: #f7f7f7;
+                        align-items: center;
+                    }
+                    h3{
+                        font-weight: bolder;
+                        font-size: 10px;
+                    }
+                    img{
+                        width: 8px;
+                    }
+                }
+            }
+        }
+    }
+}
