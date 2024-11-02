@@ -20,7 +20,7 @@ const My = () => {
     });
 
     return (
-        <div className='my container' {...handlers}>
+        <div className='my container' >
             <div className="header">
                 <img src={Bell} alt="" />
             </div>
@@ -44,9 +44,11 @@ const My = () => {
                         </div>
                     </div>
                 </div>
-                <div className={`popup ${isPopupVisible ? 'visible' : ''}`}>
-                    <div className="bar"></div>
-                    <span>SM 아티스트와 함께 호흡하는 KWANGYA 119</span>
+                <div className={`popup ${isPopupVisible ? 'visible' : ''}`} >
+                    <div className="bar_wrap" {...handlers}>
+                        <div className="bar"></div>
+                        <span>SM 아티스트와 함께 호흡하는 KWANGYA 119</span>
+                    </div>
                     <div className="banner_wrap">
                         <div className="banner1">
                             <div className="img">
