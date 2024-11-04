@@ -31,7 +31,7 @@ const Bot = () => {
         <h2>지금도 <span>1,229</span>개의 새로운 생각이 모이고 있어요!</h2>
         <h6>2023.06.21 ~ <span>현재까지</span></h6>
         <div className="marquee_container">
-          <Marquee gradient={false} speed={70} pauseOnHover={true} direction="right">
+          <Marquee gradient={false} speed={70} pauseOnHover={true} direction="right" autoFill="true">
             {marqueeContents.map((content, index) => (
               <div key={index} className="contents">
                 <div className="profil">
@@ -44,7 +44,7 @@ const Bot = () => {
             ))}
           </Marquee>
 
-          <Marquee gradient={false} speed={65} pauseOnHover={true} delay={0} direction="right">
+          <Marquee gradient={false} speed={65} pauseOnHover={true} delay={0} direction="right" autoFill="true">
             {marqueeContents.map((content, index) => (
               <div key={index + contents.length} className="contents">
                 <div className="profil">
@@ -57,7 +57,7 @@ const Bot = () => {
             ))}
           </Marquee>
 
-          <Marquee gradient={false} speed={75} pauseOnHover={true} direction="reverse" delay={0}>
+          <Marquee gradient={false} speed={75} pauseOnHover={true} direction="reverse" delay={0} autoFill="true">
             {marqueeContents.map((content, index) => (
               <div key={index + 2 * contents.length} className="contents">
                 <div className="profil">
